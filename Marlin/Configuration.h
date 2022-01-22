@@ -669,9 +669,10 @@
     #define DEFAULT_Ki_LIST {   1.54,   1.54 }
     #define DEFAULT_Kd_LIST {  76.55,  76.55 }
   #else
-    #define DEFAULT_Kp  21.73
-    #define DEFAULT_Ki   1.54
-    #define DEFAULT_Kd  76.55
+    // Tuned with M303 E0 C8 S200
+    #define DEFAULT_Kp 36.41
+    #define DEFAULT_Ki 4.25
+    #define DEFAULT_Kd 77.93
   #endif
 #endif
 
