@@ -685,9 +685,10 @@
     #define DEFAULT_Ki_LIST {   1.08,   1.08 }
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
   #else
-    #define DEFAULT_Kp  22.20
-    #define DEFAULT_Ki   1.08
-    #define DEFAULT_Kd 114.00
+    // Tuned with M303 E0 C8 S205
+    #define DEFAULT_Kp 26.36
+    #define DEFAULT_Ki 5.15
+    #define DEFAULT_Kd 33.74
   #endif
 #else
   #define BANG_MAX 255    // Limit hotend current while in bang-bang mode; 255=full current
