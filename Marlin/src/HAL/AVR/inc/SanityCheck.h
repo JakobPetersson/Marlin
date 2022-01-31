@@ -38,8 +38,9 @@
 )
 #if CONF_SERIAL_IS(0) // D0-D1. No known conflicts.
 #endif
-#if CONF_SERIAL_IS(1) && (CHECK_SERIAL_PIN(18) || CHECK_SERIAL_PIN(19))
-  #error "Serial Port 1 pin D18 and/or D19 conflicts with another pin on the board."
+// Temporary fix with pins
+#if CONF_SERIAL_IS(1) && (CHECK_SERIAL_PIN(10) || CHECK_SERIAL_PIN(11))
+  #error "Serial Port 1 pin D10 and/or D11 conflicts with another pin on the board."
 #endif
 #if CONF_SERIAL_IS(2) && (CHECK_SERIAL_PIN(16) || CHECK_SERIAL_PIN(17))
   #error "Serial Port 2 pin D16 and/or D17 conflicts with another pin on the board."
